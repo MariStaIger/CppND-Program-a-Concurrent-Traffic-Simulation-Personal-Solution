@@ -87,7 +87,7 @@ void TrafficLight::cycleThroughPhases()
     // Also, the while-loop should use std::this_thread::sleep_for to wait 1ms between two cycles. 
 
     //Random number generator
-    int cycle_time = rand()%(8000-6000 + 1) + 6000;
+    int cycle_time = rand()%(6000-4000 + 1) + 4000;
 
     //Initialize measuring of time
     auto start = std::chrono::steady_clock::now();
